@@ -1,0 +1,28 @@
+require: rubocop-rails
+
+AllCops:
+  NewCops: enable
+
+Layout/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Exclude:
+    - "db/**/*"
+    - "config/**/*"
+    - "script/**/*"
+    - "bin/**/*"
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - "db/**/*"
+    - "config/**/*"
+    - "script/**/*"
+    - "bin/**/*"
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - "db/**/*"
+    - "config/**/*"
+    - "script/**/*"
+    - "bin/**/*"
