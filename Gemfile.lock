@@ -120,6 +120,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.14.2-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-linux)
+      racc (~> 1.4)
     parallel (1.22.1)
     parlour (8.1.0)
       commander (~> 4.5)
@@ -230,6 +232,7 @@ GEM
       sorbet-runtime (>= 0.5.9892)
     sorbet-runtime (0.5.10712)
     sorbet-static (0.5.10712-universal-darwin-22)
+    sorbet-static (0.5.10712-x86_64-linux)
     sorbet-static-and-runtime (0.5.10712)
       sorbet (= 0.5.10712)
       sorbet-runtime (= 0.5.10712)
@@ -270,6 +273,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
