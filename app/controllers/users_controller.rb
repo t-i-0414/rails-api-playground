@@ -1,4 +1,4 @@
-# typed: true
+# typed: strict
 # frozen_string_literal: true
 
 require 'sorbet-runtime'
@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   sig { void }
   def index
-    @users = User.all
+    @users = T.let(User.all, T.nilable(User::PrivateRelation))
     render json: { data: @users }
   end
 end

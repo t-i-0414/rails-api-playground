@@ -40180,6 +40180,9 @@ class RuboCop::Cop::Style::MutableConstant < ::RuboCop::Cop::Base
   include ::RuboCop::Cop::ConfigurableEnforcedStyle
   extend ::RuboCop::Cop::AutoCorrector
 
+  # source://rubocop-sorbet/0.7.0/lib/rubocop/cop/sorbet/mutable_constant_sorbet_aware_behaviour.rb#15
+  def on_assignment(value); end
+
   # source://rubocop//lib/rubocop/cop/style/mutable_constant.rb#127
   def on_casgn(node); end
 
@@ -40194,6 +40197,9 @@ class RuboCop::Cop::Style::MutableConstant < ::RuboCop::Cop::Base
 
   # source://rubocop//lib/rubocop/cop/style/mutable_constant.rb#217
   def splat_value(param0 = T.unsafe(nil)); end
+
+  # source://rubocop-sorbet/0.7.0/lib/rubocop/cop/sorbet/mutable_constant_sorbet_aware_behaviour.rb#10
+  def t_let(param0 = T.unsafe(nil)); end
 
   private
 
@@ -40220,9 +40226,6 @@ class RuboCop::Cop::Style::MutableConstant < ::RuboCop::Cop::Base
   #
   # source://rubocop//lib/rubocop/cop/style/mutable_constant.rb#184
   def mutable_literal?(value); end
-
-  # source://rubocop//lib/rubocop/cop/style/mutable_constant.rb#141
-  def on_assignment(value); end
 
   # @return [Boolean]
   #
@@ -48048,7 +48051,7 @@ class RuboCop::Cop::Style::TrailingCommaInArguments < ::RuboCop::Cop::Base
   def on_send(node); end
 
   class << self
-    # source://rubocop//lib/rubocop/cop/style/trailing_comma_in_arguments.rb#91
+    # source://rubocop-rspec/2.19.0/lib/rubocop-rspec.rb#61
     def autocorrect_incompatible_with; end
   end
 end

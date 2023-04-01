@@ -24,8 +24,12 @@ group :development, :test do
   gem 'rspec-rails', '6.0.1'
   gem 'rspec-sorbet', '1.9.1'
   gem 'rubocop', '1.48.1', require: false
+  gem 'rubocop-performance', '1.16.0', require: false
   gem 'rubocop-rails', '2.18.0', require: false
+  gem 'rubocop-rspec', '2.19.0', require: false
+  gem 'rubocop-sorbet', '0.7.0', require: false
   gem 'spring-commands-rspec', '1.0.4'
+  gem 'unparser', '0.6.7', require: false
 end
 
 group :development do
