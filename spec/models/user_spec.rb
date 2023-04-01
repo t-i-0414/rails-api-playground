@@ -6,9 +6,9 @@
 # Table name: users
 #
 #  id         :bigint           not null, primary key
+#  name       :string           default(""), not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  name       :string           default(""), not null
 #
 require 'rails_helper'
 
