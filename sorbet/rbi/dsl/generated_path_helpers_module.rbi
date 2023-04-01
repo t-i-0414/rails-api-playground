@@ -87,6 +87,12 @@ module GeneratedPathHelpersModule
   def rails_storage_redirect_path(*args); end
 
   sig { params(args: T.untyped).returns(String) }
+  def rswag_api_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def rswag_ui_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
   def update_rails_disk_service_path(*args); end
 
   sig { params(args: T.untyped).returns(String) }

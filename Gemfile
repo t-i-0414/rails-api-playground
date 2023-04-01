@@ -9,6 +9,7 @@ gem 'bootsnap', require: false
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
+gem 'rswag', '2.8.0'
 gem 'sorbet', '0.5.10712'
 gem 'sorbet-rails', '0.7.34'
 gem 'sorbet-runtime', '0.5.10712'
