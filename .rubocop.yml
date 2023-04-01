@@ -36,3 +36,4 @@ Metrics/BlockLength:
     - "config/**/*"
     - "script/**/*"
     - "bin/**/*"
+    - "lib/tasks/**/*"
