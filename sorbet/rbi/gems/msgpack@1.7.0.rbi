@@ -139,44 +139,31 @@ end
 class MessagePack::Factory::Pool
   # @return [Pool] a new instance of Pool
   #
-  # source://msgpack//lib/msgpack/factory.rb#156
+  # source://msgpack//lib/msgpack/factory.rb#142
   def initialize(factory, size, options = T.unsafe(nil)); end
 
-  # source://msgpack//lib/msgpack/factory.rb#173
+  # source://msgpack//lib/msgpack/factory.rb#156
   def dump(object); end
 
-  # source://msgpack//lib/msgpack/factory.rb#163
+  # source://msgpack//lib/msgpack/factory.rb#149
   def load(data); end
+
+  # source://msgpack//lib/msgpack/factory.rb#167
+  def packer(&block); end
+
+  # source://msgpack//lib/msgpack/factory.rb#163
+  def unpacker(&block); end
 end
 
 # source://msgpack//lib/msgpack/factory.rb#91
-class MessagePack::Factory::Pool::AbstractPool
-  # @return [AbstractPool] a new instance of AbstractPool
+class MessagePack::Factory::Pool::MemberPool
+  # @return [MemberPool] a new instance of MemberPool
   #
   # source://msgpack//lib/msgpack/factory.rb#92
   def initialize(size, &block); end
 
-  # source://msgpack//lib/msgpack/factory.rb#102
-  def checkin(member); end
-
   # source://msgpack//lib/msgpack/factory.rb#98
-  def checkout; end
-end
-
-# source://msgpack//lib/msgpack/factory.rb#140
-class MessagePack::Factory::Pool::PackerPool < ::MessagePack::Factory::Pool::AbstractPool
-  private
-
-  # source://msgpack//lib/msgpack/factory.rb#143
-  def reset(packer); end
-end
-
-# source://msgpack//lib/msgpack/factory.rb#148
-class MessagePack::Factory::Pool::UnpackerPool < ::MessagePack::Factory::Pool::AbstractPool
-  private
-
-  # source://msgpack//lib/msgpack/factory.rb#151
-  def reset(unpacker); end
+  def with; end
 end
 
 # source://msgpack//lib/msgpack/packer.rb#2
