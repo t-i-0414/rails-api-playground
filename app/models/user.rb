@@ -11,5 +11,7 @@
 #  updated_at :datetime         not null
 #
 class User < ApplicationRecord
+  extend T::Sig
+
   validates :name, presence: true
 end
