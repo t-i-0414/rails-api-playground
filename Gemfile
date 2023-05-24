@@ -21,12 +21,12 @@ group :development, :test do
   gem 'factory_bot_rails', '6.2.0'
   gem 'rspec', '3.12'
   gem 'rspec-queue', '0.3.0'
-  gem 'rspec-rails', '6.0.1'
+  gem 'rspec-rails', '6.0.2'
   gem 'rspec-sorbet', '1.9.2'
-  gem 'rubocop', '1.49.0', require: false
-  gem 'rubocop-performance', '1.16.0', require: false
-  gem 'rubocop-rails', '2.19.0', require: false
-  gem 'rubocop-rspec', '2.19.0', require: false
+  gem 'rubocop', '1.51.0', require: false
+  gem 'rubocop-performance', '1.18.0', require: false
+  gem 'rubocop-rails', '2.19.1', require: false
+  gem 'rubocop-rspec', '2.22.0', require: false
   gem 'rubocop-sorbet', '0.7.0', require: false
   gem 'spring-commands-rspec', '1.0.4'
   gem 'unparser', '0.6.7', require: false
